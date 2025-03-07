@@ -54,16 +54,6 @@
                     </v-list-item>
                     <v-list-item
                         class="px-2"
-                        key="queryLostReportHistories"
-                        to="/lostreports/queryLostReportHistories"
-                        @click="changeUrl()"
-                        color="primary"
-                        style="font-weight:700;"
-                    >
-                        QueryLostReportHistory
-                    </v-list-item>
-                    <v-list-item
-                        class="px-2"
                         key="insurances"
                         to="/insurances/insurances"
                         @click="changeUrl()"
@@ -197,13 +187,6 @@ export default {
                 description: 'RestrictNetwork을 관리하는 화면입니다.', 
                 key: 'restrictNetworks', 
                 route: '/mobiles/restrictNetworks',
-                ImageUrl: '',
-            },
-            { 
-                title: 'QueryLostReportHistory', 
-                description: 'QueryLostReportHistory을 관리하는 화면입니다.', 
-                key: 'queryLostReportHistories', 
-                route: '/lostreports/queryLostReportHistories',
                 ImageUrl: '',
             },
             

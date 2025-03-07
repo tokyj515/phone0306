@@ -16,7 +16,7 @@ spring:
         - id: lostreport
           uri: http://localhost:8083
           predicates:
-            - Path=/lostReports/**, /queryLostReportHistories/**
+            - Path=/lostReports/**, 
         - id: insurance
           uri: http://localhost:8084
           predicates:
