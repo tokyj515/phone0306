@@ -11,6 +11,8 @@ import UserUserDetail from "./components/listers/UserUserDetail"
 import LostreportLostReportManager from "./components/listers/LostreportLostReportCards"
 import LostreportLostReportDetail from "./components/listers/LostreportLostReportDetail"
 
+import QueryLostReportHistoryView from "./components/QueryLostReportHistoryView"
+import QueryLostReportHistoryViewDetail from "./components/QueryLostReportHistoryViewDetail"
 import InsuranceInsuranceManager from "./components/listers/InsuranceInsuranceCards"
 import InsuranceInsuranceDetail from "./components/listers/InsuranceInsuranceDetail"
 
@@ -49,6 +51,16 @@ export default new Router({
                 component: LostreportLostReportDetail
             },
 
+            {
+                path: '/lostreports/queryLostReportHistories',
+                name: 'QueryLostReportHistoryView',
+                component: QueryLostReportHistoryView
+            },
+            {
+                path: '/lostreports/queryLostReportHistories/:id',
+                name: 'QueryLostReportHistoryViewDetail',
+                component: QueryLostReportHistoryViewDetail
+            },
             {
                 path: '/insurances/insurances',
                 name: 'InsuranceInsuranceManager',
